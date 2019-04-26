@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0ab5e7,#0ae7e2 )
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  width: 700px;
+  text-align: center;
+  color: white;
+
+}
+
+.App{
+  width: 100%;
+  padding: 20px;
+  height:500px;;
+
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+}
+
+#inputLabel {
+  padding-right: 20px;
+}
+
+.inputField{
+  width: 200px;
+  height:45px;
+  border-radius: 2%;
+  font-size: 20px;
+  text-align: center;
+}
+
+#button{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+#button:hover{
+  background-color: gray;
+}
+ .weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+ }
+
+ #cityName{
+   font-size: 50px;
+
+ }
+
+ #description{
+   font-size:30px;
+  
+  
+ }
+
+ #temp{
+   font-size: 40px;
+
+ }
