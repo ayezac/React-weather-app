@@ -1,11 +1,13 @@
+
 import React from 'react'
+import '../App.css'
 
 
 
-function Picture () {
+function Picture (props) {
     return(
         <div>
-             <img src = "" alt= "weather"/>
+             <img id = "weather-icon" src = {props.image} alt="sunny"/>    
         </div>
     )
 }

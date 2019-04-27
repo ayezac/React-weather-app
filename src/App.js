@@ -6,11 +6,12 @@ import Navbar from './Components/Navbar';
 
 
 
+
 class App extends Component {
   constructor() {
     super ()
     this.state = {
-      cityQuery: "Stockholm", 
+      cityQuery: "", 
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
   }
@@ -27,6 +28,7 @@ class App extends Component {
         <div className="App">
      
             <Navbar handleFormSubmit = {this.onFormSubmit} />
+          
             <Weather 
             cityQuery = {this.state.cityQuery}
             />

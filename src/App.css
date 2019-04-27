@@ -1,9 +1,12 @@
+
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #0ab5e7,#0ae7e2 )
+  height: 100vh;
+  background: linear-gradient(180deg, #0ab5e7,#0ae7e2 );
 }
 
 .title{
@@ -19,7 +22,6 @@ body {
   width: 100%;
   padding: 20px;
   height:500px;;
-
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -36,7 +38,7 @@ body {
   padding-right: 20px;
 }
 
-.inputField{
+.inputField {
   width: 200px;
   height:45px;
   border-radius: 2%;
@@ -60,18 +62,19 @@ body {
   color: white;
  }
 
- #cityName{
+ #cityName {
    font-size: 50px;
-
  }
 
- #description{
-   font-size:30px;
-  
-  
+ #description {
+   font-size:40px; 
  }
 
  #temp{
    font-size: 40px;
-
  }
+
+ #weather-icon{
+   width: 25%;
+ }
+
