@@ -15,12 +15,13 @@ body {
   width: 700px;
   text-align: center;
   color: white;
+  margin-top: -10px;
 
 }
 
 .App{
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   height:500px;;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,6 +51,7 @@ body {
   width: 200px;
   height: 50px;
   font-size: 20px;
+  box-shadow: 10px 5px 5px #0ab5e7;
 }
 #button:hover{
   background-color: gray;
@@ -60,18 +62,21 @@ body {
   justify-content: flex-start;
   font-family: 'Montserrat', sans-serif;
   color: white;
+
  }
 
  #cityName {
    font-size: 50px;
+   margin-bottom: -10px;
  }
 
  #description {
-   font-size:40px; 
+   font-size:30px; 
  }
 
  #temp{
-   font-size: 40px;
+   font-size: 50px;
+   margin-bottom: -10px;
  }
 
  #weather-icon{

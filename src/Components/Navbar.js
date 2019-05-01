@@ -5,53 +5,46 @@ import '../App.css';
 
 class Navbar extends React.Component {
     constructor() {
-        super ()
+        super()
         this.state = {
-            cityQuery : ""
+            cityQuery: ""
         }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
-    handleChange(event) {
-        this.setState({
-            cityQuery: event.target.value
-        })
     }
 
-    handleSubmit(event) {
-            event.preventDefault();
-            this.props.handleFormSubmit(this.state.cityQuery)
-        
-           }
-    
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.handleFormSubmit(this.state.cityQuery)
+    }
+
     render() {
-       
+
         return (
             <div className="navbar">
- 
-                <form className="navbar"> 
-                    
-                    <label id = "inputLabel">  
-                    <input 
-                        className="inputField"
-                        type ="text" 
-                        name = "city"  
-                        value= {this.state.cityQuery}
-                        onChange = {this.handleChange}
-                        placeholder = "Name of city"/>
+
+                <form className="navbar">
+
+                    <label id="inputLabel">
+                        <input
+                            className="inputField"
+                            type="text"
+                            name="city"
+                            value={this.state.cityQuery}
+                            onChange={(evt) => this.setState({ cityQuery: evt.target.value })}
+                            placeholder="Name of city" />
                     </label>
-            
-                    <button 
-                    id="button"
-                    onClick ={this.handleSubmit}>
-                    Get Weather
+
+                    <button
+                        id="button"
+                        onClick={this.handleSubmit}>
+                        Get Weather
                     </button>
 
                 </form>
 
-             </div>
+            </div>
         )
-        }
+    }
 }
 
 export default Navbar;
