@@ -1,37 +1,34 @@
-
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(180deg, #0ab5e7,#0ae7e2 );
+  background: linear-gradient(180deg, #0ab5e7, #0ae7e2);
 }
 
-.title{
-  font-family: 'Montserrat', sans-serif;
+.title {
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   width: 700px;
   text-align: center;
   color: white;
   margin-top: -10px;
-
 }
 
-.App{
+.App {
   width: 100%;
   padding: 25px;
-  height:500px;;
+  height: 500px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 5px;
 }
 
@@ -40,46 +37,50 @@ body {
 }
 
 .inputField {
-  width: 200px;
-  height:45px;
-  border-radius: 2%;
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid #0ae7e2;
   font-size: 20px;
   text-align: center;
 }
 
-#button{
-  width: 200px;
+#button {
+  width: 180px;
   height: 50px;
   font-size: 20px;
   box-shadow: 10px 5px 5px #0ab5e7;
+  border-radius: 20px;
+  border: 1px solid #0ae7e2;
+  background-color: #0ae7e2;
 }
-#button:hover{
-  background-color: gray;
+#button:hover {
+  background-color: #09bdb8;
+  color: white;
 }
- .weather {
+.weather {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
+}
 
- }
+#cityName {
+  font-size: 50px;
+  margin-bottom: -10px;
+}
 
- #cityName {
-   font-size: 50px;
-   margin-bottom: -10px;
- }
+#description {
+  font-size: 30px;
+}
 
- #description {
-   font-size:30px; 
- }
+#temp {
+  font-size: 50px;
+  margin-bottom: -10px;
+}
 
- #temp{
-   font-size: 50px;
-   margin-bottom: -10px;
- }
-
- #weather-icon{
-   width: 25%;
- }
-
+.weather-icon {
+  width: 25%;
+  margin: auto;
+}
